@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <!-- Compiled and minified CSS -->
+    <!-- Materialze-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Materialize icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+</head>
+
+<body class="Site">
+    <header>
+        <div class="row">
+            <div class="col-25"></div>
+            <div class="logo">
+                <a href="Home.html">
+                    <img src="assets/placeholderlogo.png" alt="logo">
+                </a>
+            </div>
+
+            <ul class="navBar">
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#LinkedIn">LinkedIn</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="Home.html">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="Site-content">
+
+        <hr class="hr1">
+
+        <br>
+
+        <div class="row center " style="padding-top:50px;">
+            <center>
+                <div class="app_top img">
+                    <img src="assets/avatar.png" alt="avatar">
+
+                    <h1>Victor Nguyen</h1>
+
+                    <h3>Software and Web Developer</h3>
+
+                    <div class="about">Hi, my name is Victor and I am a software/web developer. I love developing
+                        software,
+                        particularly games.
+                    </div>
+                </div>
+            </center>
+
+            <br>
+
+            <div class="space2"></div>
+
+            <h3>What I can do for you</h3>
+
+            <div class="space1"></div>
+
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="column">
+                        <div class="colMargin">
+                            <img src="assets/placeholder.png" alt="placeholder">
+                        </div>
+                        <h3>Javascript</h3>
+                        <p>I have experience in using Javascript... such as...</p>
+                    </div>
+                    <div class="column">
+                        <div class="colMargin">
+                            <img src="assets/placeholder.png" alt="placeholder">
+                        </div>
+                        <h3>Html/Css</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+                    <div class="column">
+                        <div class="colMargin">
+                            <img src="assets/placeholder.png" alt="placeholder">
+                        </div>
+                        <h3>C#</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+                    <div class="column">
+                        <div class="colMargin">
+                            <img src="assets/placeholder.png" alt="placeholder">
+                        </div>
+                        <h3>Node.js</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="space"></div>
+
+            <a id="hireButton" class="waves-effect waves-light btn-large modal-trigger" style="background-color: #aaaaaa;" data-target="modal1"><i
+                    class="material-icons left" style="color:white">emoji_people</i>Hire me!</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal modal-fixed-footer">
+                <div class="row modal-content">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="Placeholder" id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="mobile" type="mobile" class="validate">
+                                <label for="mobile">Mobile</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 center-align">
+                                <a class="waves-effect waves-light btn" id="submitProject">submit</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- socket IO Served by the server -->
+        <script src="/socket.io/socket.io.js"></script>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script src="env.js"></script>
+
+</body>
+
+
+</html>
